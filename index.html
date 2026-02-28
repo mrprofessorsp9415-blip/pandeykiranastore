@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO & title -->
+  <title>Sarkar Enterprises – Premium Construction</title>
+  <!-- Font Awesome 6 (free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Fonts: professional corporate font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <!-- main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ===== HEADER SECTION START ===== -->
+  <header class="header" id="header">
+    <nav class="navbar container">
+      <div class="logo-area" id="logoHome">
+        <!-- Logo + company name (clickable -> landing) -->
+        <img src="https://placehold.co/50x50/0a1f44/f39c12?text=SE" alt="Sarkar Enterprises logo" class="logo-img">
+        <span class="company-name">Sarkar Enterprises</span>
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#" class="nav-link active" data-section="landing">Home</a></li>
+        <li><a href="#" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#" class="nav-link" data-section="services">Services</a></li>
+        <li class="dropdown">
+          <a href="#" class="nav-link">Projects <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#" data-section="ongoing">Ongoing Projects</a></li>
+            <li><a href="#" data-section="completed">Completed Projects</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="nav-link" data-section="career">Career</a></li>
+        <li><a href="#" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+  <!-- ===== HEADER SECTION END ===== -->
+
+  <!-- ===== MAIN CONTENT – ALL SECTIONS (hidden except landing initially) ===== -->
+  <main>
+    <!-- ===== LANDING SECTION START ===== -->
+    <section id="landing" class="section active-section">
+      <div class="container landing-grid">
+        <!-- LEFT: MD MESSAGE BLOCK -->
+        <div class="md-message glass">
+          <h1 class="md-heading">Message from the Managing Director</h1>
+          <p class="md-text">"At Sarkar Enterprises, we believe that every structure we build is more than concrete and steel — it is a foundation of trust, commitment, and long-term relationships. Our mission is to deliver high-quality construction services with integrity, innovation, and excellence."</p>
+          <div class="md-signature">
+            <strong>Mr. Vishal Singh</strong>
+            <span>Managing Director</span>
+          </div>
+          <button class="btn btn-primary explore-btn" id="exploreBtn">Explore Our Company</button>
+        </div>
+        <!-- RIGHT: MD PHOTO with frame -->
+        <div class="md-photo-frame">
+          <img src="images/md-photo.jpg" alt="Mr. Vishal Singh - Managing Director" class="md-photo">
+        </div>
+      </div>
+    </section>
+    <!-- ===== LANDING SECTION END ===== -->
+
+    <!-- ===== ABOUT SECTION START ===== -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Sarkar Enterprises</h2>
+        <p class="about-intro">With over two decades of excellence, we have delivered landmark projects that blend durability with design. Our team is committed to ethical practices and client satisfaction.</p>
+        <div class="about-grid">
+          <div class="about-card">
+            <h3>Our Vision</h3>
+            <p>To be the most trusted name in construction, creating sustainable spaces that enrich communities.</p>
+          </div>
+          <div class="about-card">
+            <h3>Our Mission</h3>
+            <p>To execute projects with precision, safety, and transparency, exceeding expectations every time.</p>
+          </div>
+        </div>
+        <div class="features">
+          <div class="feature-box"><i class="fas fa-medal"></i><h4>Quality</h4><p>Premium materials & strict standards</p></div>
+          <div class="feature-box"><i class="fas fa-handshake"></i><h4>Trust</h4><p>Long-term client relationships</p></div>
+          <div class="feature-box"><i class="fas fa-clock"></i><h4>Experience</h4><p>20+ years of industry leadership</p></div>
+        </div>
+      </div>
+    </section>
+    <!-- ===== ABOUT SECTION END ===== -->
+
+    <!-- ===== SERVICES SECTION START ===== -->
+    <section id="services" class="section">
+      <div class="container">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-grid">
+          <div class="service-card"><i class="fas fa-home"></i><h3>Residential Construction</h3><p>Custom homes, villas, apartments</p></div>
+          <div class="service-card"><i class="fas fa-building"></i><h3>Commercial Building</h3><p>Offices, malls, industrial complexes</p></div>
+          <div class="service-card"><i class="fas fa-paint-roller"></i><h3>Renovation & Interior</h3><p>Modern remodeling & fit-outs</p></div>
+          <div class="service-card"><i class="fas fa-hard-hat"></i><h3>Civil Contracting</h3><p>Infrastructure & heavy civil works</p></div>
+        </div>
+      </div>
+    </section>
+    <!-- ===== SERVICES SECTION END ===== -->
+
+    <!-- ===== PROJECTS – ONGOING (hidden until clicked) ===== -->
+    <section id="ongoing" class="section">
+      <div class="container">
+        <h2 class="section-title">Ongoing Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card"><img src="https://placehold.co/600x400/1e3c72/white?text=Riverside+Towers" alt="project"><div class="project-info"><h4>Riverside Towers</h4><p>40% complete</p></div></div>
+          <div class="project-card"><img src="https://placehold.co/600x400/1e3c72/white?text=Green+Valley" alt="project"><div class="project-info"><h4>Green Valley Villas</h4><p>70% complete</p></div></div>
+          <div class="project-card"><img src="https://placehold.co/600x400/1e3c72/white?text=Metro+Plaza" alt="project"><div class="project-info"><h4>Metro Plaza</h4><p>25% complete</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="completed" class="section">
+      <div class="container">
+        <h2 class="section-title">Completed Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card"><img src="https://placehold.co/600x400/2c3e50/white?text=Sunset+Heights" alt="project"><div class="project-info"><h4>Sunset Heights</h4><p>2019</p></div></div>
+          <div class="project-card"><img src="https://placehold.co/600x400/2c3e50/white?text=City+Center" alt="project"><div class="project-info"><h4>City Center Mall</h4><p>2021</p></div></div>
+          <div class="project-card"><img src="https://placehold.co/600x400/2c3e50/white?text=Oak+Residency" alt="project"><div class="project-info"><h4>Oak Residency</h4><p>2023</p></div></div>
+        </div>
+      </div>
+    </section>
+    <!-- ===== PROJECTS SECTION END ===== -->
+
+    <!-- ===== CAREER SECTION START ===== -->
+    <section id="career" class="section">
+      <div class="container">
+        <h2 class="section-title">Career</h2>
+        <div class="career-grid">
+          <div class="job-listings">
+            <h3>Open Positions</h3>
+            <ul><li><strong>Site Engineer</strong> – 3+ yrs exp (Civil)</li><li><strong>Project Manager</strong> – 8+ yrs</li><li><strong>Architect</strong> – AutoCAD/Revit</li><li><strong>Safety Officer</strong> – certified</li></ul>
+          </div>
+          <div class="application-form">
+            <h3>Apply Now</h3>
+            <form id="careerForm">
+              <input type="text" id="careerName" placeholder="Full Name" required>
+              <input type="email" id="careerEmail" placeholder="Email" required>
+              <input type="tel" id="careerPhone" placeholder="Phone" required>
+              <select id="careerQual" required><option value="">Qualification</option><option value="diploma">Diploma</option><option value="btech">B.Tech</option><option value="other">Other</option></select>
+              <div class="file-field"><label>Resume (PDF/DOC)</label><input type="file" id="resume" accept=".pdf,.doc,.docx" required></div>
+              <button type="submit" class="btn btn-secondary">Submit Application</button>
+              <p class="form-message" id="careerMsg"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===== CAREER SECTION END ===== -->
+
+    <!-- ===== CONTACT SECTION START ===== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> 42 Construction Ave, Civil Lines, Delhi</p>
+            <p><i class="fas fa-phone-alt"></i> +91 98765 43210</p>
+            <p><i class="fas fa-envelope"></i> info@sarkarenterprises.com</p>
+            <div class="map-placeholder"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.897937777!2d77.068898!3d28.5272803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1644600000000" allowfullscreen="" loading="lazy"></iframe></div>
+          </div>
+          <div class="contact-form">
+            <h3>Send a message</h3>
+            <form id="contactForm">
+              <input type="text" id="contactName" placeholder="Your Name" required>
+              <input type="email" id="contactEmail" placeholder="Email" required>
+              <input type="text" id="contactSubject" placeholder="Subject">
+              <textarea id="contactMessage" rows="4" placeholder="Message" required></textarea>
+              <button type="submit" class="btn btn-primary">Send</button>
+              <p class="form-message" id="contactMsg"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===== CONTACT SECTION END ===== -->
+  </main>
+
+  <!-- ===== FOOTER (simple) ===== -->
+  <footer class="footer">
+    <div class="container"><p>&copy; 2025 Sarkar Enterprises – Building Trust, Creating Future</p></div>
+  </footer>
+
+  <!-- WhatsApp floating button -->
+  <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+  <script src="script.js"></script>
+</body>
+</html>
